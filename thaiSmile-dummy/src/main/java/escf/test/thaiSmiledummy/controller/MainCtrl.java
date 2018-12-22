@@ -18,10 +18,28 @@ public class MainCtrl {
 
 	@RequestMapping("/")
 	public String index(Model model) {
-		model.addAttribute("datetime", new Date());
-		model.addAttribute("username", "Ömerrrr");
-		model.addAttribute("mode", appMode);
+		
 
-		return "index";
+		return service1(model);
+	}
+	
+	@RequestMapping("/service1")
+	public String service1(Model model) {
+		
+
+		return "service1";
+	}
+	
+	@RequestMapping("/service2")
+	public String service2(Model model) {
+		
+
+		return "service2";
+	}
+	@RequestMapping("/service3")
+	public String service3(Model model) {
+		
+
+		return "service3";
 	}
 }
